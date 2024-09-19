@@ -1,0 +1,113 @@
+.home {
+  position: relative;
+  margin: auto;
+  max-width: 1150px;
+  padding: 6rem;
+
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 6rem;
+}
+
+.accent {
+  color: var(--accent-clr);
+}
+
+.home .text-container {
+  margin: 3rem 0;
+  width: fit-content;
+  overflow: hidden;
+  margin: 3rem 0;
+  z-index: 2;
+  position: relative;
+}
+
+.home .text-container h1 {
+  font-weight: 900;
+  font-size: var(--text-800);
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  z-index: 2;
+}
+
+.home .text-container h2 {
+  font-weight: 300;
+  margin-top: 1rem;
+  font-size: var(--text-600);
+  line-height: 1;
+}
+
+.home .text-container h2 span {
+  font-weight: 700;
+}
+
+.home .text-container p {
+  font-weight: 300;
+  margin: 1.5rem 0;
+  max-width: 750px;
+  font-size: var(--text-400);
+}
+
+.home .text-container a {
+  padding: 0.7rem 1.3rem;
+  display: inline-flex;
+  height: fit-content !important;
+  border-radius: 4px;
+  color: var(--bg);
+  background-color: var(--accent-clr);
+  font-size: var(--text-300);
+  font-weight: 500;
+}
+
+.dot-wrapper {
+  cursor: crosshair;
+  border-radius: 9999px;
+  padding: 8px;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+.dot-wrapper:hover {
+  background-color: rgb(71, 85, 105);
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, var(--bg), var(--text-primary));
+  opacity: 0.35;
+}
+
+.dot-wrapper:hover .dot {
+  background: linear-gradient(180deg, var(--bg), var(--accent-clr)) !important;
+  opacity: 1;
+}
+
+.grid-container {
+  display: grid;
+  width: fit-content;
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  right: 2.25rem;
+  max-width: 75%;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 4.5rem 1.5rem;
+
+  }
+  .home .text-container {
+    margin-bottom: 3rem;
+
+  }
+  .home .text-container h1 {
+    font-size: var(--text-700);
+  }
+}
