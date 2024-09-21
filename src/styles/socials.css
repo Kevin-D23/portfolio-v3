@@ -1,5 +1,5 @@
 .socials{
-    position: sticky;
+    position: sticky; 
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,7 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 0 2.25rem;
-    z-index: 9;
+    z-index: 20;
 
 }
 

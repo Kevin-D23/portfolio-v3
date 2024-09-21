@@ -18,7 +18,7 @@ export default function Home() {
       opacity: [
         { value: 1, easing: "easeOutSine", duration: 250 },
         {
-          value: 0.5,
+          value: 0.35,
           easing: "easeInOutQuad",
           duration: 500,
         },
