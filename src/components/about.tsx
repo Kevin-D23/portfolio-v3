@@ -72,7 +72,6 @@ export default function About() {
     <section className="about" id="about">
       <div className="header-container">
         <div className="header-line"></div>
-
         <h3>
           <Reveal>
             <div>
@@ -119,7 +118,7 @@ export default function About() {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   height="1.1rem"
                   width="1.1rem"

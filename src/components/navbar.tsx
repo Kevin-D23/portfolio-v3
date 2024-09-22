@@ -25,7 +25,7 @@ export default function Navbar() {
   window.addEventListener("scroll", checkCurrentSection);
 
   function checkCurrentSection() {
-    const position = window.scrollY + 600;
+    const position = window.scrollY + 300;
     if (
       sectionPositions[0] !== undefined &&
       sectionPositions[1] !== undefined &&

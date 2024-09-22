@@ -12,8 +12,8 @@
   display: flex;
   align-items: center;
   z-index: 10;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   scrollbar-width: none;
   overflow-y: scroll;
 }
@@ -26,7 +26,7 @@
   line-height: 1;
   border-radius: 4px;
   margin-top: 1.125rem;
-  height: 45px;
+  height: 45px !important;
   width: 45px;
   display: flex;
   justify-content: center;
@@ -58,6 +58,14 @@
   justify-content: center;
 }
 
+.navbar a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
 a {
   text-decoration: none;
   color: var(--text-primary);
@@ -68,4 +76,9 @@ a {
   background-color: var(--bg);
   border-right: 1px solid var(--accent-clr);
   opacity: 1 !important;
+}
+
+footer {
+  height: 200px;
+  background: linear-gradient(180deg, var(--bg), var(--bg-dark));
 }

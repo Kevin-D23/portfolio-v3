@@ -10,15 +10,16 @@ import Socials from "./components/socials";
 function App() {
   return (
     <div className="App">
-        <Navbar />
-        <main> <Socials/>
+      <Navbar />
+      <main>
+        <Socials />
         <Home />
         <About />
         <Projects />
         <Experience />
-        <Contact /></main>
-       
-
+        <Contact />
+        <footer></footer>
+      </main>
     </div>
   );
 }

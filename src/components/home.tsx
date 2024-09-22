@@ -1,9 +1,48 @@
 import "../styles/home.css";
 import anime from "animejs";
+import { useState, useEffect } from "react";
 
 import { Reveal } from "./reveal";
 
 export default function Home() {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const speed = 100;
+
+  useEffect((): any => {
+    let timeout: any;
+    let words = ["Full Stack Developer", "Software Engineer", "Web Developer"];
+
+    const currentWord = words[currentWordIndex];
+    if (!isDeleting) {
+      // Typing effect
+      if (displayedText.length < currentWord.length) {
+        timeout = setTimeout(() => {
+          setDisplayedText(currentWord.slice(0, displayedText.length + 1));
+        }, speed);
+      } else {
+        // Pause at the end of the word before starting to delete
+        timeout = setTimeout(() => {
+          setIsDeleting(true);
+        }, 1000);
+      }
+    } else {
+      // Backspace effect
+      if (displayedText.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayedText(currentWord.slice(0, displayedText.length - 1));
+        }, speed / 2); // Speed up backspacing
+      } else {
+        // Move to the next word after backspacing
+        setIsDeleting(false);
+        setCurrentWordIndex((prev) => (prev + 1) % words.length);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayedText, isDeleting, currentWordIndex, speed]);
+
   const handleClick = (e: any) => {
     anime({
       targets: ".dot",
@@ -50,6 +89,7 @@ export default function Home() {
       index++;
     }
   }
+
   return (
     <section className="home" id="home">
       <div className="text-container">
@@ -60,9 +100,10 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <h2>
-            I'm a <span className="accent">Full Stack Developer</span>
+            I'm a <span className="accent">{displayedText}</span>
           </h2>
         </Reveal>
+
         <Reveal>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

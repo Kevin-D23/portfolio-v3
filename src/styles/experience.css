@@ -1,4 +1,68 @@
 .experience {
-    height: 100vh;
- 
+  max-width: 1150px;
+  padding: 6rem;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 4.5rem 1.5rem;
+  }
+}
+
+.job {
+  margin-bottom: 1.5rem;
+  padding: 0 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--bg-light);
+}
+
+.job-name-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.job-name-date h3 {
+  font-weight: 700;
+  font-size: var(--text-500);
+}
+
+.job-date,
+.job-location {
+  font-size: var(--text-400);
+  font-weight: 500;
+}
+
+.job-role-location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.job-role-location h4 {
+  color: var(--accent-clr);
+  font-weight: 700;
+  font-size: var(--text-400);
+}
+
+.job-description {
+  margin-bottom: 1.125rem;
+  font-weight: 300;
+  font-size: var(--text-400);
+}
+
+.job-tech {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.job-tech span {
+  font-size: var(--text-300);
+  background-color: var(--bg-light);
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 500;
 }

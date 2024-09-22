@@ -111,3 +111,9 @@
     font-size: var(--text-700);
   }
 }
+
+@media (max-width:590px) {
+  .home .text-container h2{
+    height: 4.5rem;
+  }
+}
