@@ -2,6 +2,7 @@
   background-color: var(--bg);
   color: var(--text-primary);
   display: grid;
+  width: 100vw;
   grid-template-columns: 60px 1fr;
 }
 

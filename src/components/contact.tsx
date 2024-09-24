@@ -10,13 +10,15 @@ export default function Contact() {
             Contact<span className="accent">.</span>
           </h1>
         </Reveal>
-        <Reveal>
+        <Reveal width="100%">
           <p className="contact-description">
             Shoot me an email if you want to connect! You can also find me on{" "}
             <span>
               <a
                 className="accent"
                 href="https://www.linkedin.com/in/kevin-duong-/"
+                target="_blank"
+                rel="noreferrer"
               >
                 LinkedIn
               </a>
@@ -26,6 +28,8 @@ export default function Contact() {
               <a
                 className="accent"
                 href="https://www.instagram.com/kevinxduongg/"
+                target="_blank"
+                rel="noreferrer"
               >
                 Instagram
               </a>
@@ -34,7 +38,10 @@ export default function Contact() {
           </p>
         </Reveal>
         <Reveal width="100%">
-          <a href="mailto:kevinduong111@gmail.com" className="contact-email-container">
+          <a
+            href="mailto:kevinduong111@gmail.com"
+            className="contact-email-container"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.5rem"

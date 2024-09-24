@@ -68,8 +68,9 @@ export default function Socials() {
       ),
     },
   ];
+
   return (
-    <div className="socials">
+    <div className="socials" id="socials">
       <motion.div
         initial="hidden"
         animate="visible"

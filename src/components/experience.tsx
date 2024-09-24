@@ -4,61 +4,14 @@ import "../styles/experience.css";
 export default function Experience() {
   const experiences = [
     {
-      name: "Google",
-      start: "2022",
+      name: "Champions Cleaning Solutions",
+      start: "2024",
       end: "Present",
-      role: "Software Engineer",
-      location: "Atlanta",
+      role: "Web Developer",
+      location: "Yuba City",
       description:
-        "I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier.",
-      tech: [
-        "Angular",
-        "Python",
-        "GCP",
-        "Git",
-        "Github",
-        "Java",
-        "Golang",
-        "K8s",
-      ],
-    },
-    {
-      name: "Google",
-      start: "2022",
-      end: "Present",
-      role: "Software Engineer",
-      location: "Atlanta",
-      description:
-        "I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier.",
-      tech: [
-        "Angular",
-        "Python",
-        "GCP",
-        "Git",
-        "Github",
-        "Java",
-        "Golang",
-        "K8s",
-      ],
-    },
-    {
-      name: "Google",
-      start: "2022",
-      end: "Present",
-      role: "Software Engineer",
-      location: "Atlanta",
-      description:
-        "I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier.",
-      tech: [
-        "Angular",
-        "Python",
-        "GCP",
-        "Git",
-        "Github",
-        "Java",
-        "Golang",
-        "K8s",
-      ],
+        "Designed and developed both the front-end and back-end of a commercial cleaning business website, ensuring a seamless user experience and efficient backend functionality.",
+      tech: ["React", "JavaScript", "HTML", "CSS", "Figma"],
     },
   ];
   return (

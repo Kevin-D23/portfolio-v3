@@ -35,13 +35,13 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 20%);
+  transform: translate(-50%, 3%);
   transition: all 0.25s;
   border-radius: 0.25rem;
 }
 
 .img-container:hover img {
-  transform: rotateZ(2deg) translate(-50%, 20%) scale(105%);
+  transform: rotateZ(2deg) translate(-50%, 3%) scale(105%);
 }
 
 .project-info {
@@ -64,8 +64,12 @@
   font-weight: 700;
   font-size: var(--text-500);
   flex-shrink: 0;
-  max-width: calc(100%- 150px);
+  max-width: calc(100% - 150px);
   cursor: pointer;
+}
+
+.project-name h4:hover {
+  color:var(--accent-clr)
 }
 
 .name-line {

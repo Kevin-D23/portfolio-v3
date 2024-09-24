@@ -106,10 +106,7 @@ export default function Home() {
 
         <Reveal>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+          I specialize in front-end development, focusing on creating engaging, intuitive, and visually stunning web experiences. My goal is to deliver digital solutions that not only look great but also function flawlessly across all platforms, ensuring an exceptional user experience every time 🎨 Let's connect!  
           </p>
         </Reveal>
         <Reveal>

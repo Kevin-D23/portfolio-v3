@@ -19,7 +19,7 @@
 
 .socials a:hover {
   color: var(--accent-clr);
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .icon-container {

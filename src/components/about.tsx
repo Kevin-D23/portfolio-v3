@@ -84,31 +84,33 @@ export default function About() {
         <div className="about-description">
           <Reveal>
             <p className="highlight-first">
-              Hey! I'm Bob, if you haven't already gathered that by now. I'm a
-              painter turned software engineer from Daytona, Florida. I
-              specialize in the backend, primarily Node and Rust, but love
-              building with whatever tools are right for the job.
+              Hey, I'm Kevin! I’m a front-end software engineer passionate about
+              crafting beautiful and functional websites and web applications.
+              As a fourth-year computer science student at UCLA, I've had the
+              opportunity to hone my skills, exploring the endless possibilities
+              of web technologies and creating user-centered designs.
             </p>
           </Reveal>
           <Reveal>
             <p>
-              I currently work for Google on Google Photos. I also toss in my ¢2
-              with the design systems teams from time to time (once an artist,
-              always an artist, amirite?).
+              What started as a hobby turned into something much more as I
+              discovered the satisfaction of turning ideas into interactive
+              experiences. I love diving deep into code, exploring the latest
+              tools and technologies to bring a touch of magic to the web.
             </p>
           </Reveal>
           <Reveal>
             <p>
-              Outside of work, I still love to paint. Any given Sunday you'll
-              find me scribbling some happy clouds with my son ☁️ I even teach
-              courses online if you're looking to learn!
+              Outside of coding, you’ll often find me at the gym, honing my
+              photography skills, or enjoying a new video game. I also love
+              exploring different restaurants and cafes, and spending quality
+              time with family and friends fuels my creativity.
             </p>
           </Reveal>
           <Reveal>
             <p>
-              I'm passively looking for new positions where I can merge my love
-              for code with my love for the canvas. If you think you've got an
-              opening that I might like, let's connect 🔗
+              Feel free to browse through my projects, and let’s create
+              something amazing together!
             </p>
           </Reveal>
           <Reveal>
@@ -198,7 +200,6 @@ export default function About() {
                 <span>TypeScript</span>
                 <span>Tailwind</span>
                 <span>Figma</span>
-                <span>AWS</span>
               </div>
             </div>
           </Reveal>
