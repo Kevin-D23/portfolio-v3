@@ -1,13 +1,22 @@
 import { Reveal } from "./reveal";
-import { motion } from "framer-motion";
 import kapi from "../images/kapi.jpg";
 import portfolio from "../images/portfolio.png";
 import discordBot from "../images/discordBot.webp";
 import studentsInferno from "../images/studentsInferno.png";
 import "../styles/projects.css";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 export default function Projects() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+    // eslint-disable-next-line 
+  }, [isInView]);
   const projects = [
     {
       name: "Kapi",
@@ -203,7 +212,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="projects" id="projects">
+    <section className="projects" id="projects" ref={ref}>
       <div className="header-container">
         <h3>
           <Reveal width="100%">
@@ -218,9 +227,22 @@ export default function Projects() {
         {projects.map((project, index) => {
           return (
             <div className="project" key={index}>
-              <div className="img-container" onClick={() => openProject(index)}>
-                <img src={project.img} alt="project" />
-              </div>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 75 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                initial="hidden"
+                animate={mainControls}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <div
+                  className="img-container"
+                  onClick={() => openProject(index)}
+                >
+                  <img src={project.img} alt="project" />
+                </div>
+              </motion.div>
               <div className="project-info">
                 <Reveal width="100%">
                   <div className="project-name">
