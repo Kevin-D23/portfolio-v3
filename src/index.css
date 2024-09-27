@@ -1,5 +1,5 @@
 :root {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 
   --bg: #111;
   --bg-dark: #080808;
