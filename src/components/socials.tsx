@@ -102,11 +102,13 @@ export default function Socials() {
         })}
       </motion.div>
       <motion.a
-        initial={{ opacity: 0, x:20 }}
-        animate={{ opacity: 1 ,x:0}}
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className="resume-btn"
-        href=""
+        href="https://drive.google.com/file/d/1JmtmYOTWRrNcELf3UVEP0gsciUmwroc2/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
       >
         Resume
       </motion.a>
