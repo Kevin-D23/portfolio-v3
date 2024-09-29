@@ -1,6 +1,7 @@
 import "../styles/socials.css";
 import { motion } from "framer-motion";
 
+
 export default function Socials() {
   const socials = [
     {
@@ -106,7 +107,7 @@ export default function Socials() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className="resume-btn"
-        href="https://drive.google.com/file/d/1JmtmYOTWRrNcELf3UVEP0gsciUmwroc2/view?usp=sharing"
+        href="/resume.pdf"
         target="_blank"
         rel="noreferrer"
       >
