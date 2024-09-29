@@ -162,19 +162,14 @@ export default function About() {
                     d="M10.41 7.41L15 12l-4.59 4.6L9 15.18L12.18 12L9 8.82M5 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"
                   ></path>
                 </svg>
-                Expert
+                Languages
               </h4>
               <div className="tech-list">
-                <span>C++</span>
                 <span>JavaScript</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>NodeJS</span>
-                <span>React</span>
-                <span>NextJS</span>
-                <span>Git</span>
-                <span>MongoDB</span>
-                <span>Heroku</span>
+                <span>TypeScript</span>
+                <span>C++</span>
+                <span>C</span>
+                <span>Python</span>
               </div>
             </div>
           </Reveal>
@@ -193,13 +188,19 @@ export default function About() {
                     d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.11.89-2 2-2zm-8 14h2v-3.27l2.83 1.63l1-1.73L14 12l2.83-1.64l-1-1.73L13 10.27V7h-2v3.27L8.17 8.63l-1 1.73L10 12l-2.83 1.63l1 1.73L11 13.73z"
                   ></path>
                 </svg>
-                Proficient
+                Technologes
               </h4>
               <div className="tech-list">
-                <span>Python</span>
-                <span>TypeScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Node.js</span>
+                <span>React</span>
+                <span>Next.js</span>
+                <span>Git</span>
                 <span>Tailwind</span>
                 <span>Figma</span>
+                <span>MongoDB</span>
+                <span>Heroku</span>
               </div>
             </div>
           </Reveal>

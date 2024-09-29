@@ -7,11 +7,11 @@ export default function Experience() {
       name: "Champions Cleaning Solutions",
       start: "2024",
       end: "Present",
-      role: "Web Developer",
+      role: "Front-end Developer",
       location: "Yuba City",
       description:
         "Designed and developed both the front-end and back-end of a commercial cleaning business website, ensuring a seamless user experience and efficient backend functionality.",
-      tech: ["React", "JavaScript", "HTML", "CSS", "Figma"],
+      tech: ["React", "TypeScript","Next.js", "HTML", "CSS", "Figma"],
     },
   ];
   return (
