@@ -69,7 +69,7 @@
 }
 
 .project-name h4:hover {
-  color:var(--accent-clr)
+  color: var(--accent-clr);
 }
 
 .name-line {
@@ -176,28 +176,27 @@
 }
 
 .displayed-project-links-container h5 {
-    font-weight: 700;
-    font-size: var(--text-500);
-    margin:0;
-    margin-bottom: .5rem;
+  font-weight: 700;
+  font-size: var(--text-500);
+  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .displayed-project-links-container {
-margin-top: 1.4rem;
-
+  margin-top: 1.4rem;
 }
 
-.displayed-project-links
-{
-    display: flex;align-items: center;gap: .75rem;;
+.displayed-project-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-
-.displayed-project-links a{
-    display: flex;
-    align-items: center;
-    color:var(--accent-clr);
-    opacity: 1;
-    font-weight: 500;
-    gap:.25rem
+.displayed-project-links a {
+  display: flex;
+  align-items: center;
+  color: var(--accent-clr);
+  opacity: 1;
+  font-weight: 500;
+  gap: 0.25rem;
 }

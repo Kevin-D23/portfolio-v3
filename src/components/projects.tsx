@@ -15,7 +15,7 @@ export default function Projects() {
     if (isInView) {
       mainControls.start("visible");
     }
-    // eslint-disable-next-line 
+    // eslint-disable-next-line
   }, [isInView]);
   const projects = [
     {
@@ -55,9 +55,21 @@ export default function Projects() {
       tech: ["React", "TypeScript", "HTML", "CSS"],
       shortDescription:
         "Responsive portfolio website featuring smooth animations, showcasing projects and skills with a visually appealing design and seamless user experience across devices.",
-      img: portfolio,
+      img: portfolio, 
       longDescription: [
         "I built my portfolio website to showcase my growth and expertise as a front-end developer. This is the third version of the site, where I focused on creating a seamless and engaging user experience.",
+        "The goal was not just to display my projects but to demonstrate the skills I use in real-world scenarios, especially when it comes to building smooth, responsive interfaces.",
+      ],
+    },
+    {
+      name: "3D Pong",
+      github: "https://github.com/minruigui/cs174A-project",
+      tech: ["JavaScript"],
+      img: portfolio, 
+      shortDescription:
+        "Responsive portfolio website featuring smooth animations, showcasing projects and skills with a visually appealing design and seamless user experience across devices.",
+      longDescription: [
+        "The goal was not just to display my projects but to demonstrate the skills I use in real-world scenarios, especially when it comes to building smooth, responsive interfaces.",
         "The goal was not just to display my projects but to demonstrate the skills I use in real-world scenarios, especially when it comes to building smooth, responsive interfaces.",
       ],
     },
