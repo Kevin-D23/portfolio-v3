@@ -49,28 +49,16 @@ export default function Projects() {
       ],
     },
     {
-      name: "Portfolio Website",
-      github: "https://github.com/Kevin-D23/portfolio-v3",
-      demo: "http://kevinduong.dev",
-      tech: ["React", "TypeScript", "HTML", "CSS"],
-      shortDescription:
-        "Responsive portfolio website featuring smooth animations, showcasing projects and skills with a visually appealing design and seamless user experience across devices.",
-      img: portfolio, 
-      longDescription: [
-        "I built my portfolio website to showcase my growth and expertise as a front-end developer. This is the third version of the site, where I focused on creating a seamless and engaging user experience.",
-        "The goal was not just to display my projects but to demonstrate the skills I use in real-world scenarios, especially when it comes to building smooth, responsive interfaces.",
-      ],
-    },
-    {
       name: "3D Pong",
       github: "https://github.com/minruigui/cs174A-project",
       tech: ["JavaScript"],
-      img: portfolio, 
+      img: portfolio,
       shortDescription:
-        "Responsive portfolio website featuring smooth animations, showcasing projects and skills with a visually appealing design and seamless user experience across devices.",
+        "3D rendition of the classic game, Pong. This game features rendering techniques including texture mapping, shading, and shadow mapping.",
       longDescription: [
-        "The goal was not just to display my projects but to demonstrate the skills I use in real-world scenarios, especially when it comes to building smooth, responsive interfaces.",
-        "The goal was not just to display my projects but to demonstrate the skills I use in real-world scenarios, especially when it comes to building smooth, responsive interfaces.",
+        "This 3D version of the game Pong was created using the 'tiny-graphics' library.",
+        "Leading a team of 3, I mainly focused on the moving aspects. This included implementing cursor tracking for paddle movement, ball trajectory, and collision detection.",
+        "This project was built for a UCLA computer science course, CS-174A: Intro to Computer Graphics."
       ],
     },
     {

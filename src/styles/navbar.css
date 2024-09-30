@@ -93,8 +93,13 @@ footer {
 .footer a {
   display: flex;
   align-items: center;
-  color: var(--accent-clr);
+  color: var(--text-400);
   opacity: 1;
   font-weight: 500;
   gap: 0.25rem;
 }
+
+.footer a:hover {
+  color: var(--accent-clr);
+}
+
