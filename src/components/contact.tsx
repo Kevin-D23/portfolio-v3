@@ -22,19 +22,7 @@ export default function Contact() {
               >
                 LinkedIn
               </a>
-            </span>{" "}
-            or{" "}
-            <span>
-              <a
-                className="accent"
-                href="https://www.instagram.com/kevinxduongg/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Instagram
-              </a>
-            </span>{" "}
-            if that's more your speed.
+            </span>
           </p>
         </Reveal>
         <Reveal width="100%">
