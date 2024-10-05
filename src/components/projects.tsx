@@ -1,8 +1,8 @@
 import { Reveal } from "./reveal";
 import kapi from "../images/kapi.jpg";
-import portfolio from "../images/portfolio.png";
 import discordBot from "../images/discordBot.webp";
 import studentsInferno from "../images/studentsInferno.png";
+import pong from "../images/3dpong.png"
 import "../styles/projects.css";
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
@@ -52,7 +52,7 @@ export default function Projects() {
       name: "3D Pong",
       github: "https://github.com/minruigui/cs174A-project",
       tech: ["JavaScript"],
-      img: portfolio,
+      img: pong,
       shortDescription:
         "3D rendition of the classic game, Pong. This game features rendering techniques including texture mapping, shading, and shadow mapping.",
       longDescription: [

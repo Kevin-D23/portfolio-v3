@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect((): any => {
     let timeout: any;
-    let words = ["Full Stack Developer", "Software Engineer", "Web Developer"];
+    let words = ["Front-End Developer", "Software Engineer", "Web Developer"];
 
     const currentWord = words[currentWordIndex];
     if (!isDeleting) {
