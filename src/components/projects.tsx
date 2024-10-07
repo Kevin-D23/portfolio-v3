@@ -21,7 +21,7 @@ export default function Projects() {
     {
       name: "Kapi",
       github: "https://github.com/king-kapi/kapi-web",
-      demo: "",
+      demo: "https://www.linkedin.com/company/kapi-social/",
       tech: ["React", "TypeScript", "Tailwind", "NextJS", "MongoDB"],
       shortDescription:
         "Similar to Discord, Kapi was designed to create a welcoming space for underrepresented communities in gaming, fostering inclusive interactions and community-building within the gaming world.",
