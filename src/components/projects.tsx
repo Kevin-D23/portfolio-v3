@@ -2,10 +2,11 @@ import { Reveal } from "./reveal";
 import kapi from "../images/kapi.jpg";
 import discordBot from "../images/discordBot.webp";
 import studentsInferno from "../images/studentsInferno.png";
-import pong from "../images/3dpong.png"
+import pong from "../images/3dpong.png";
 import "../styles/projects.css";
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Projects() {
   const ref = useRef(null);
@@ -17,6 +18,7 @@ export default function Projects() {
     }
     // eslint-disable-next-line
   }, [isInView]);
+
   const projects = [
     {
       name: "Kapi",
@@ -58,7 +60,7 @@ export default function Projects() {
       longDescription: [
         "This 3D version of the game Pong was created using the 'tiny-graphics' library.",
         "Leading a team of 3, I mainly focused on the moving aspects. This included implementing cursor tracking for paddle movement, ball trajectory, and collision detection.",
-        "This project was built for a UCLA computer science course, CS-174A: Intro to Computer Graphics."
+        "This project was built for a UCLA computer science course, CS-174A: Intro to Computer Graphics.",
       ],
     },
     {
@@ -123,7 +125,7 @@ export default function Projects() {
             </div>
             <div className="displayed-project-description-container">
               {projects[index].longDescription.map((text, i) => {
-                return <p>{text}</p>;
+                return <p key={i}>{text}</p>;
               })}
             </div>
             <div className="displayed-project-links-container">

@@ -26,9 +26,9 @@ export default function Experience() {
           </Reveal>
         </h3>
       </div>
-      {experiences.map((experience) => {
+      {experiences.map((experience,index) => {
         return (
-          <div className="job">
+          <div className="job" key={index}>
             <div className="job-name-date">
               <Reveal>
                 <h3>{experience.name}</h3>
@@ -52,8 +52,8 @@ export default function Experience() {
             </Reveal>
             <Reveal>
               <div className="job-tech">
-                {experience.tech.map((tech) => {
-                  return <span>{tech}</span>;
+                {experience.tech.map((tech,index) => {
+                  return <span key={index}>{tech}</span>;
                 })}
               </div>
             </Reveal>
