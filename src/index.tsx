@@ -4,12 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { SessionContextProvider } from "@supabase/auth-helpers-react";
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from "@supabase/supabase-js";
+import { BrowserRouter } from "react-router-dom";
 
-
-const supabase = createClient(String(process.env.REACT_APP_DBURL), String(process.env.REACT_APP_DBAPI));
-
-
+const supabase = createClient(
+  String(process.env.REACT_APP_DBURL),
+  String(process.env.REACT_APP_DBAPI)
+);
 
 
 const root = ReactDOM.createRoot(
@@ -18,7 +19,9 @@ const root = ReactDOM.createRoot(
 root.render(
   // <React.StrictMode>
   <SessionContextProvider supabaseClient={supabase}>
-  <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </SessionContextProvider>
   // </React.StrictMode>
 );

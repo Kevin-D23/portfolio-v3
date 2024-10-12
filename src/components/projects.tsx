@@ -6,7 +6,6 @@ import pong from "../images/3dpong.png";
 import "../styles/projects.css";
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
-import { v4 as uuidv4 } from "uuid";
 
 export default function Projects() {
   const ref = useRef(null);
