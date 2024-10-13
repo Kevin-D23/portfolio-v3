@@ -34,10 +34,19 @@ export default function Admin() {
   ) => {
     const { name, value } = e.target;
 
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
+    setFormData((prevFormData) => {
+      if (name === "file") {
+        return {
+          ...prevFormData,
+          file: (e.target as HTMLInputElement).files
+        };
+      }
+      return {
+        ...prevFormData,
+        [name]: value,
+      };
+    });
+    console.log(formData)
   };
 
   const handleArrayChange = (
@@ -153,6 +162,7 @@ export default function Admin() {
                   <input
                     type="file"
                     name="image"
+                    accept=".jpeg, .jpg, .png, .webp"
                     onChange={(e) => handleChange(e)}
                   />
                 </div>
