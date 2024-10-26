@@ -6,6 +6,12 @@
   grid-template-columns: 60px 1fr;
 }
 
+@media screen and (max-width:500px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

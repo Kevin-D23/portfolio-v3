@@ -1,5 +1,6 @@
 .home {
-  position: relative;
+  position: sticky;
+  top: 0;
   margin: auto;
   max-width: 1150px;
   padding: 6rem;
@@ -7,6 +8,8 @@
   overflow: hidden;
   text-align: left;
   margin-bottom: 6rem;
+  height: 100vh;
+  z-index: 1
 }
 
 .accent {
@@ -95,6 +98,7 @@
   bottom: 12px;
   right: 2.25rem;
   max-width: 75%;
+  max-height: 75%;
   z-index: 0;
 }
 

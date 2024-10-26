@@ -1,7 +1,11 @@
 .projects {
+  position: relative;
   max-width: 1150px;
   padding: 6rem;
-  margin: auto;
+  margin: 0 auto;
+  height: fit-content;
+  background-color: var(--bg);
+  z-index: 5;
 }
 
 .projects-container {

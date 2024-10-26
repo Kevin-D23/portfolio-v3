@@ -18,6 +18,12 @@
   overflow-y: scroll;
 }
 
+@media screen and (max-width:500px) {
+  .navbar{
+    display: none;
+  }
+}
+
 .logo {
   font-size: var(--text-500);
   transform: rotate(-90deg);

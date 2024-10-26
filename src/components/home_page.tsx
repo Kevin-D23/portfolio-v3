@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import About from "./about";
 import Contact from "./contact";
 import Experience from "./experience";
@@ -5,16 +6,22 @@ import Home from "./home";
 import Navbar from "./navbar";
 import Projects from "./projects";
 import Socials from "./socials";
+import { useScroll } from "framer-motion";
 
 export default function HomePage() {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end end"],
+  });
   return (
     <>
       <Navbar />
-      <main>
+      <main ref={container}>
         <Socials />
-        <Home />
-        <About />
-        <Projects />
+        <Home scrollYProgress={scrollYProgress}/>
+        <About scrollYProgress={scrollYProgress}/>
+        <Projects scrollYProgress={scrollYProgress}/>
         <Experience />
         <Contact />
         <footer>

@@ -1,7 +1,12 @@
 .about {
+  position: relative;
   max-width: 1150px;
   padding: 6rem;
-  margin: auto;
+  margin: 0 auto;
+  z-index: 5;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--bg);
 }
 
 .header-container {

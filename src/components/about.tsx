@@ -1,7 +1,8 @@
+import { useTransform, motion } from "framer-motion";
 import "../styles/about.css";
 import { Reveal } from "./reveal";
 
-export default function About() {
+export default function About({scrollYProgress}:any) {
   const socials = [
     {
       link: "https://www.linkedin.com/in/kevin-duong-/",
@@ -52,8 +53,11 @@ export default function About() {
       ),
     },
   ];
+
+  const scale = useTransform(scrollYProgress, [0, .4], [.8, 1]);
+
   return (
-    <section className="about" id="about">
+    <motion.section style={{scale}} className="about" id="about">
       <div className="header-container">
         <div className="header-line"></div>
         <h3>
@@ -190,6 +194,6 @@ export default function About() {
           </Reveal>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -1,14 +1,18 @@
 import "../styles/home.css";
 import anime from "animejs";
 import { useState, useEffect } from "react";
+import { motion, useTransform } from "framer-motion";
 
 import { Reveal } from "./reveal";
 
-export default function Home() {
+export default function Home({ scrollYProgress }: any) {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const speed = 100;
+
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.6]);
+  const opacity = useTransform(scrollYProgress, [0, .2], [1,0])
 
   useEffect((): any => {
     let timeout: any;
@@ -91,7 +95,7 @@ export default function Home() {
   }
 
   return (
-    <section className="home" id="home">
+    <motion.section style={{scale, opacity}} className="home" id="home">
       <div className="text-container">
         <Reveal>
           <h1>
@@ -106,7 +110,11 @@ export default function Home() {
 
         <Reveal>
           <p>
-          I specialize in front-end development, focusing on creating engaging, intuitive, and visually stunning web experiences. My goal is to deliver digital solutions that not only look great but also function flawlessly across all platforms, ensuring an exceptional user experience every time 🎨 Let's connect!  
+            I specialize in front-end development, focusing on creating
+            engaging, intuitive, and visually stunning web experiences. My goal
+            is to deliver digital solutions that not only look great but also
+            function flawlessly across all platforms, ensuring an exceptional
+            user experience every time 🎨 Let's connect!
           </p>
         </Reveal>
         <Reveal>
@@ -119,6 +127,6 @@ export default function Home() {
       >
         {dots}
       </div>
-    </section>
+    </motion.section>
   );
 }
