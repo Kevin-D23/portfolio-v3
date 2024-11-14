@@ -12,7 +12,7 @@ export default function Home({ scrollYProgress }: any) {
   const speed = 100;
 
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.6]);
-  const opacity = useTransform(scrollYProgress, [0, .2], [1,0])
+  const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   useEffect((): any => {
     let timeout: any;
@@ -78,6 +78,38 @@ export default function Home({ scrollYProgress }: any) {
   const dots = [];
   let index = 0;
 
+  useEffect(() => {
+    let lastExecutionTime = 0;
+
+    const handleScroll = () => {
+      const currentTime = new Date().getTime();
+      
+      // Only proceed if the last execution was more than the scroll delay ago
+      if (currentTime - lastExecutionTime > 800) {
+        const bottomRightDot = document.querySelector(
+          `.dot-wrapper[data-index="${numCols * numRows - 1}"]`
+        );
+
+        if (bottomRightDot) {
+          handleClick({ target: bottomRightDot });
+        }
+
+        // Update the last execution time
+        lastExecutionTime = currentTime;
+      }
+    };
+
+    // Only add the scroll listener if the screen width is larger than 768px
+    if (window.innerWidth >= 768) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    // Clean up the scroll listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   for (let i = 0; i < numCols; i++) {
     for (let j = 0; j < numRows; j++) {
       dots.push(
@@ -95,7 +127,7 @@ export default function Home({ scrollYProgress }: any) {
   }
 
   return (
-    <motion.section style={{scale, opacity}} className="home" id="home">
+    <motion.section style={{ scale, opacity }} className="home" id="home">
       <div className="text-container">
         <Reveal>
           <h1>
