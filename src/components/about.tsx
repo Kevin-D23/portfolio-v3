@@ -185,6 +185,7 @@ export default function About({scrollYProgress}:any) {
                 <span>React</span>
                 <span>Next.js</span>
                 <span>Vue.js</span>
+                <span>Express</span>
                 <span>Docker</span>
                 <span>PostgreSQL</span>
                 <span>AWS S3</span>
