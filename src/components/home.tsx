@@ -142,7 +142,7 @@ export default function Home({ scrollYProgress }: any) {
 
         <Reveal>
           <p>
-            I specialize in front-end development, focusing on creating
+            I am a full-stack developer, focusing on creating
             engaging, intuitive, and visually stunning web experiences. My goal
             is to deliver digital solutions that not only look great but also
             function flawlessly across all platforms, ensuring an exceptional
