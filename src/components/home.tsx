@@ -16,7 +16,7 @@ export default function Home({ scrollYProgress }: any) {
 
   useEffect((): any => {
     let timeout: any;
-    let words = ["Front-End Developer", "Software Engineer", "Web Developer"];
+    let words = ["Full-Stack Developer", "Software Engineer", "Web Developer", "Photographer"];
 
     const currentWord = words[currentWordIndex];
     if (!isDeleting) {

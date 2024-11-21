@@ -2,7 +2,7 @@ import { useTransform, motion } from "framer-motion";
 import "../styles/about.css";
 import { Reveal } from "./reveal";
 
-export default function About({scrollYProgress}:any) {
+export default function About({ scrollYProgress }: any) {
   const socials = [
     {
       link: "https://www.linkedin.com/in/kevin-duong-/",
@@ -54,10 +54,10 @@ export default function About({scrollYProgress}:any) {
     },
   ];
 
-  const scale = useTransform(scrollYProgress, [0, .4], [.8, 1]);
+  const scale = useTransform(scrollYProgress, [0, 0.4], [0.8, 1]);
 
   return (
-    <motion.section style={{scale}} className="about" id="about">
+    <motion.section style={{ scale }} className="about" id="about">
       <div className="header-container">
         <div className="header-line"></div>
         <h3>
@@ -72,11 +72,12 @@ export default function About({scrollYProgress}:any) {
         <div className="about-description">
           <Reveal>
             <p className="highlight-first">
-              Hey 👋 I'm Kevin! I’m a full-stack software engineer passionate about
-              crafting beautiful and functional websites and web applications.
-              As a third-year computer science student at UCLA, I've had the
-              opportunity to hone my skills, exploring the endless possibilities
-              of web technologies and creating user-centered designs.
+              Hey 👋 I'm Kevin! I’m a full-stack software engineer passionate
+              about crafting beautiful and functional websites and web
+              applications. As a third-year computer science student at UCLA,
+              I've had the opportunity to hone my skills, exploring the endless
+              possibilities of web technologies and creating user-centered
+              designs.
             </p>
           </Reveal>
           <Reveal>
