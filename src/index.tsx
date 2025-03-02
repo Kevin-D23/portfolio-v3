@@ -6,7 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import { SessionContextProvider } from "@supabase/auth-helpers-react";
 import { createClient } from "@supabase/supabase-js";
 import { BrowserRouter } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/react"
 
 
 const supabase = createClient(
