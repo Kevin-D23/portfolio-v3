@@ -4,14 +4,34 @@ import "../styles/experience.css";
 export default function Experience() {
   const experiences = [
     {
-      name: "Champions Cleaning Solutions",
-      start: "2024",
+      name: "ACM at UCLA",
+      start: "Dec 2024",
       end: "Present",
-      role: "Front-end Developer",
-      location: "Yuba City",
+      role: "Full-Stack Intern",
+      location: "Los Angeles, CA",
+      description:
+        "Developing and maintaining web applications for over 500+ ACM members across 9 committees, delivering high-performance and scalable solutions.",
+      tech: ["React", "TypeScript", "Next.js", "Express", "Docker", "HTML", "CSS",],
+    },
+    {
+      name: "MyOxytocin",
+      start: "Oct 2024",
+      end: "Dec 2024",
+      role: "Front-End Developer",
+      location: "Los Angeles, CA",
+      description:
+        "Led front-end development and UI/UX design for a fully responsive e-commerce platform using Vue.js, ensuring a seamless shopping experience across devices while optimizing for search engine visibility.",
+      tech: ["Vue", "JavaScript", "HTML", "CSS", "Figma"],
+    },
+    {
+      name: "Champions Cleaning Solutions",
+      start: "Aug 2024",
+      end: "Oct 2024",
+      role: "Front-End Developer",
+      location: "Yuba City, CA",
       description:
         "Designed and developed both the front-end and back-end of a commercial cleaning business website, ensuring a seamless user experience and efficient backend functionality.",
-      tech: ["React", "TypeScript","Next.js", "HTML", "CSS", "Figma"],
+      tech: ["React", "TypeScript", "Next.js", "HTML", "CSS", "Figma"],
     },
   ];
   return (
@@ -26,7 +46,7 @@ export default function Experience() {
           </Reveal>
         </h3>
       </div>
-      {experiences.map((experience,index) => {
+      {experiences.map((experience, index) => {
         return (
           <div className="job" key={index}>
             <div className="job-name-date">
@@ -52,7 +72,7 @@ export default function Experience() {
             </Reveal>
             <Reveal>
               <div className="job-tech">
-                {experience.tech.map((tech,index) => {
+                {experience.tech.map((tech, index) => {
                   return <span key={index}>{tech}</span>;
                 })}
               </div>
