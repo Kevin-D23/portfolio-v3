@@ -7,7 +7,7 @@ export default function Experience() {
       name: "ACM at UCLA",
       start: "Dec 2024",
       end: "Present",
-      role: "Full-Stack Intern",
+      role: "Full-Stack Developer",
       location: "Los Angeles, CA",
       description:
         "Developing and maintaining web applications for over 500+ ACM members across 9 committees, delivering high-performance and scalable solutions.",
