@@ -4,13 +4,13 @@ import "../styles/experience.css";
 export default function Experience() {
   const experiences = [
     {
-      name: "ACM at UCLA",
+      name: "Association for Computing Machinery",
       start: "Dec 2024",
       end: "Present",
       role: "Full-Stack Developer",
       location: "Los Angeles, CA",
       description:
-        "Developing and maintaining web applications for over 500+ ACM members across 9 committees, delivering high-performance and scalable solutions.",
+        "Developing and maintaining web applications for over 1000+ ACM members across 9 committees, delivering high-performance and scalable solutions. The official (award-winning) website for ACM at UCLA, the largest tech community on campus!",
       tech: ["React", "TypeScript", "Next.js", "Express", "Docker", "HTML", "CSS",],
     },
     {
