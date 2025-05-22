@@ -74,7 +74,7 @@ export default function About({ scrollYProgress }: any) {
             <p className="highlight-first">
               Hey 👋 I'm Kevin! I’m a full-stack software engineer passionate
               about crafting beautiful and functional websites and web
-              applications. As a third-year computer science student at UCLA,
+              applications. As a fourth-year computer science student at UCLA,
               I've had the opportunity to hone my skills, exploring the endless
               possibilities of web technologies and creating user-centered
               designs.
