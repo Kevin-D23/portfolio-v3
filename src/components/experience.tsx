@@ -4,6 +4,16 @@ import "../styles/experience.css";
 export default function Experience() {
   const experiences = [
     {
+      name: "Apple",
+      start: "June 2025",
+      end: "Present",
+      role: "Interactive Developer - IS&T",
+      location: "Austin, TX",
+      description:
+        "TBA",
+      tech: ["TBA"],
+    },
+    {
       name: "Association for Computing Machinery",
       start: "Dec 2024",
       end: "Present",
