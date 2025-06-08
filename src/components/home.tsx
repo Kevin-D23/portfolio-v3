@@ -79,35 +79,15 @@ export default function Home({ scrollYProgress }: any) {
   let index = 0;
 
   useEffect(() => {
-    let lastExecutionTime = 0;
+  setTimeout(() => {
+    const bottomRightDot = document.querySelector(
+      `.dot-wrapper[data-index="${numCols * numRows - 1}"]`
+    );
 
-    const handleScroll = () => {
-      const currentTime = new Date().getTime();
-      
-      // Only proceed if the last execution was more than the scroll delay ago
-      if (currentTime - lastExecutionTime > 800) {
-        const bottomRightDot = document.querySelector(
-          `.dot-wrapper[data-index="${numCols * numRows - 1}"]`
-        );
-
-        if (bottomRightDot) {
-          handleClick({ target: bottomRightDot });
-        }
-
-        // Update the last execution time
-        lastExecutionTime = currentTime;
-      }
-    };
-
-    // Only add the scroll listener if the screen width is larger than 768px
-    if (window.innerWidth >= 768) {
-      window.addEventListener("scroll", handleScroll);
+    if (bottomRightDot) {
+      handleClick({ target: bottomRightDot });
     }
-
-    // Clean up the scroll listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+  }, 1000);
   }, []);
 
   for (let i = 0; i < numCols; i++) {
