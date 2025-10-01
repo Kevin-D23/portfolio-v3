@@ -6,12 +6,12 @@ export default function Experience() {
     {
       name: "Apple",
       start: "June 2025",
-      end: "Present",
-      role: "Interactive Developer - IS&T",
+      end: "Sep 2025",
+      role: "Software Engineer",
       location: "Austin, TX",
       description:
-        "TBA",
-      tech: ["TBA"],
+        "Front-end developer for Apple.com homepage. Implemented scroll-triggered animations and interactive elements, responsive video content, and motion effects for hundreds of millions of users; collaborated with design and engineering teams to ensure seamless playback across devices and browsers; designed and maintained front-end archival platform, streamlining version control, reducing render times, and improving retrieval efficiency by 50%+",
+      tech: ["HTML", "CSS", "JavaScript"],
     },
     {
       name: "Association for Computing Machinery",
